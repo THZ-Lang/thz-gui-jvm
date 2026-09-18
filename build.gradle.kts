@@ -1,10 +1,10 @@
-﻿// ==============================================================================
-// thz-gui-jvm â€” IDE Desktop Swing do THZ-LANG
+// ==============================================================================
+// thz-gui-jvm — IDE Desktop Swing do THZ-LANG
 //
-// Projeto Gradle autÃ´nomo na pasta JVM/ do workspace. Consome o nÃºcleo thz-core
+// Projeto Gradle autônomo na pasta JVM/ do workspace. Consome o núcleo thz-core
 // (../thz-core-jvm) via Composite Build no dev local ou
 // artefato publicado (thz.lang:thz-core) em CI.
-// Registra as funÃ§Ãµes TELA.* (Swing) na stdlib via BibliotecaTela.registrar().
+// Registra as funções TELA.* (Swing) na stdlib via BibliotecaTela.registrar().
 // ==============================================================================
 
 plugins {
@@ -84,7 +84,7 @@ tasks.test {
     }
 }
 
-// Task para iniciar a IDE Desktop â€” workingDir = raiz do workspace
+// Task para iniciar a IDE Desktop — workingDir = raiz do workspace
 tasks.register<JavaExec>("gui") {
     group = "application"
     description = "Inicia a IDE Desktop Swing do THZ-LANG"

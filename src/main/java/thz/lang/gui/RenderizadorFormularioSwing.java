@@ -111,7 +111,7 @@ public class RenderizadorFormularioSwing {
             raw = reg != null ? "Formulário THZ — " + reg.nomeEstrutura() : "Formulário THZ";
         }
         // Sanitiza caracteres que quebram title bar no Windows (em dash/cp1252)
-        return raw.replace("—", "-").replace("–", "-").replace("â€”", "-").replace("â€", "-");
+        return raw.replace("—", "-").replace("–", "-").replace("—", "-").replace("—", "-");
     }
 
     public void exibir() {
